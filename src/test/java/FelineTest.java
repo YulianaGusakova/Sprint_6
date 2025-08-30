@@ -16,18 +16,18 @@ public class FelineTest {
     @Test
     public void getFamilyTest() {
         Feline feline = new Feline();
-        assertEquals("Кошачьи", feline.getFamily());
+        assertEquals("Неверно определено семейство","Кошачьи", feline.getFamily());
     }
 
     @Test
     public void getKittensNoArgumentTest() {
         Feline feline = new Feline();
-        assertEquals(1, feline.getKittens());
+        assertEquals("Неверное количество котят",1, feline.getKittens());
     }
 
     @Test
     public void getKittensWithArgumentTest() {
         Feline feline = new Feline();
-        assertEquals(4, feline.getKittens(4));
+        assertEquals("Неверное количество котят", 4, feline.getKittens(4));
     }
 }
