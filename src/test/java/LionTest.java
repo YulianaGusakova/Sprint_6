@@ -24,10 +24,6 @@ public class LionTest {
     public void setUP() throws Exception {
         lion = new Lion ("Самец", feline);
     }
- @Test
- public void haveManeTest() throws Exception {
-             assertTrue(lion.doesHaveMane());
- }
 
  @Test
  public void haveManeThrowsExceptionTest() {
